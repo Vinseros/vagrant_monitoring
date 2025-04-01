@@ -1,0 +1,5 @@
+apt-get update && apt-get install ansible -y
+ansible-playbook /vagrant/playbook.yaml
+cd /vagrant && sudo docker-compose up -d
+#curl -X POST -u admin:admin -H "Content-Type: application/json" -d @datasource.json http://localhost:3000/api/datasources
+#curl -X POST -u admin:dcxrst -H "Content-Type: application/json" -d '{"dashboard": {"title": "Node Exporter Metrics", "id": 1860,"overwrite": true}}' http://localhost:3000/api/dashboards/import
